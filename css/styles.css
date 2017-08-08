@@ -47,56 +47,47 @@ the film overviews should be visible, and
 the footer sections should be side by side rather than stacked, with a black background and white text.
 Hint Now that you're making a responsive design, you'll need to tell the browser. Don't forget your <meta> viewport tag!*/
 
-@ media ( min-width: 768px )
+@media screen and (min-width: 480px) {
+  .site-nav {
+      display: block;
+      max-width: 60px;
+      width:60px;
+      left: 0px;
+      height: 100%;
+      top: 100px;
+      }
+  .site-logo {
+      left: 0;
+      bottom:0;
+      top:0px;
+      width: 80px;
+      top: .625rem;
+      left: .625rem;
+      z-index: 101;
+    }
+    p.movie-overview {
+      display: block;
+    }
 
-.movie-overview{
-  display: block;
+    .site-nav-item {
+    width: 60px;
+    height: 20%;
+    }
+
+    .site-nav-list{
+    width: 100%;
+    display:grid;
+    }
+
+    .movie {
+      margin-left: 60px;
+    }
+
+    footer {
+      background-color: black;
+      color:white;
+    }
 }
-
-.site-nav {
-    display: block;
-    max-width: 60px;
-    position: absolute;
-    left: 0px;
-    height: 100%;
-    top: 100px;
-
-}
-
-.site-logo {
-  left: 0;
-  bottom:0;
-  top:0px;
-  width: 80px;
-  top: .625rem;
-  left: .625rem;
-  z-index: 101;
-}
-
-p.movie-overview {
-  display: block;
-}
-
-.site-nav-item {
-width: 60px;
-height: 20%;
-}
-
-.site-nav-list{
-width: 100%;
-display:grid;
-}
-
-.movie {
-  margin-left: 60px;
-}
-
-footer {
-  background-color: black;
-  color:white;
-}
-
-
 
 
 
