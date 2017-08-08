@@ -1,3 +1,4 @@
+
 /* BASE styles */
 
 html {
@@ -35,6 +36,84 @@ figure {
   margin: 0;
   padding: 0;
 }
+
+/*add @media styles here*/
+
+/*Once the device (or browser window) is wider than 768px,
+
+the navigation bar should move to be fixed to the left side of the window,
+the logo should be within the sidebar rather than floating on its own,
+the film overviews should be visible, and
+the footer sections should be side by side rather than stacked, with a black background and white text.
+Hint Now that you're making a responsive design, you'll need to tell the browser. Don't forget your <meta> viewport tag!*/
+
+@ media ( min-width: 768px )
+
+.movie-overview{
+  display: block;
+}
+
+.site-nav {
+    display: block;
+    max-width: 60px;
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    top: 100px;
+
+}
+
+.site-logo {
+  left: 0;
+  bottom:0;
+  top:0px;
+  width: 80px;
+  top: .625rem;
+  left: .625rem;
+  z-index: 101;
+}
+
+p.movie-overview {
+  display: block;
+}
+
+.site-nav-item {
+width: 60px;
+height: 20%;
+}
+
+.site-nav-list{
+width: 100%;
+display:grid;
+}
+
+.movie {
+  margin-left: 60px;
+}
+
+footer {
+  background-color: black;
+  color:white;
+}
+
+
+
+
+
+@ media ( min-width: 992px ) {
+
+
+
+}
+
+
+
+/*
+Once the device (or browser window) is wider than 992px,
+
+Posters should show for all movies except the first one,
+Movie overviews should be hidden for all movies except the first one.
+Movies should be laid out in a 3-column grid, except for the first one.*/
 
 
 /* CLEARFIX - for ensuring floated elements are contained in their parent */
